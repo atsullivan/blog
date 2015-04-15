@@ -3,7 +3,7 @@ description: ""
 
 url: "[YOUR DOMAIN]"
 
-paginate: 1
+paginate: 5
 
 markdown: rdiscount
 permalink: pretty

@@ -1,13 +1,30 @@
 {% include header-post.html %}
-<div class="row-fluid">
-  <div class="span8">
-    <h1>{{ page.title }}</h1>
-    <p class="muted">{{ page.date | date_to_long_string }}</p>
 
-    {{ content }}
-  </div>
-  <div class="span4">
-    {% include sidebar.html %}
-  </div>
-</div>
-{% include footer.html %}
+ <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('../../../../img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>{{ page.title }}</h1>
+                        <h2 class="subheading">{{ page.excerpt }}</h2>
+                        <span class="meta">Posted by <a href="#">Andrew Sullivan</a> on {{ page.date | date_to_long_string }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  {{ content }}
+                </div>
+            </div>
+        </div>
+    </article>
+
+{% include footer-post.html %}
