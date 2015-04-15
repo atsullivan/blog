@@ -2,40 +2,7 @@
 layout: default
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-          {% for post in paginator.posts %}
-
-              <div class="post-preview">
-                    <a href="{{ post.url }}">
-                        <!-- <h2 class="post-title">
-                            Man must explore, and this is exploration at its greatest
-                        </h2> -->
-                        <h2>{{ post.title }}</h2>
-                        <h3 class="post-subtitle">
-                            {{ post.excerpt }}
-                            <!-- Problems look mighty small from 150 miles up -->
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by <a href="#">Andrew Sullivan</a> on {{ post.date | date_to_long_string }}</p>
-                </div>
-                <hr>
-          
-               <!--  <h2>{{ post.title }}</h2>
-                <h4>{{ post.date | date_to_long_string }}</h4>
-                <p>
-                  <a href="{{ post.url }}">Read Post</a>
-                </p> -->
-     
-          {% endfor %}
-
-        </div>
-    </div>
-</div>
-
-<!-- {% for post in paginator.posts %}
+{% for post in paginator.posts %}
 <div class="row-fluid">
   <div class="span12">
     <h2>{{ post.title }}</h2>
@@ -45,7 +12,7 @@ layout: default
     </p>
   </div>
 </div>
-{% endfor %} -->
+{% endfor %}
 
 <div class="row-fluid">
   <div class="span12">
